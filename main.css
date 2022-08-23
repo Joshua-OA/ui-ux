@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://use.typekit.net/roq6fxy.css");
+.header{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+    height:60vh;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    color: #fff;
+}
+
+.img-box{
+    align-self: flex-end;
+    background: url(../proimg.jpg);
+    background-position: 50% 30%;
+    background-size: cover;
+    border-radius:50% 50% 50% 50%;
+    width:380px;
+    height:380px;
+}
+.txt-box{
+    align-self: flex-start;
+}
+
+
+.intro-txt{
+    font-size:1.4rem;
+}
+.name{
+    font-size:2.2rem;
+}
+
+
+.intro-row{
+    background-color:#111111;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.inner-row{
+    width:60%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.inner-row > a {
+    font-family: 'Rubik' , sans-serif;
+    font-size: 0.85rem;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 30px 10px 30px;
+    color: #000;
+}
+
+.all-works{
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.port-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+
+}
+.col-p{
+width: 48%;
+margin-bottom: 40px;
+}
+
+.port-box{
+    background-color: #282828;
+    padding:20px;
+    height:200px;
+}
+
+.port-img{
+    width:100%;
+    height:100%;
+    box-shadow: 10px 10px 35px -3px rgba(0,0,0,0.26);
+-webkit-box-shadow: 10px 10px 35px -3px rgba(0,0,0,0.26);
+-moz-box-shadow: 10px 10px 35px -3px rgba(0,0,0,0.26);
+
+}
+
+.ig1{
+    background: url(/yendiemu.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.ig2{
+    background: url(/aku.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.ig3{
+    background: url(/bushman.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.ig4{
+    background: url(/morebeyond.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.comp-name{
+    color: #fff;
+    font-family: 'Acumin Pro', sans-serif;
+    margin: 15px 0 10px 0 ;
+    font-weight:600;
+}
+
+.p-link{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Acumin Pro', sans-serif;
+    font-size: 0.9rem;
+}
+
+.ri-arrow-right-line{
+    margin-left: 5px;
+    font-size: 1rem;
+    color: #fff;
+}
+.foot{
+    background-color: #191919;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.foot > div{
+    width:60%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-el{
+    width: calc(100%/4.7);
+}
+.foot-logo{
+    width:8%;
+}
+
+.foot > div > a{
+    display: flex;
+    align-items: center;
+    font-family: "Acumin Pro", sans-serif;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color:#fff
+}
+.foot > div > a > i{
+    font-size:0.9rem;
+    margin-right: 10px;
+}
+
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .col{
+        width:45%;
+    }
+    .img-box{
+        width:200px !important;
+        height:200px !important;
+    }
+
+    .inner-row{
+        width:85%;
+    }
+
+    .port-row{
+        width: 85%;
+    
+    }
+
+    .p-link{
+        width: 50%;
+    }
+    .col-p{
+        width: 48%;
+        }
+
+        .foot > div{
+            text-align: center;
+            width:85%;
+        }
+        .foot-el{
+            width: calc(100%/3.55);
+        }
+        
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+    .header{
+        height: 70vh;
+        flex-direction: column-reverse;
+    }
+    .col{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:90%;
+        color: #fff;
+    }
+
+    .img-box{
+        align-self: center;
+        margin-top: 20px;
+        border-radius:0% 0% 0% 0%;
+        width:99% !important;
+        height:290px !important;
+    }
+
+    .intro-txt{
+        font-size:1rem;
+    }
+    .name{
+        font-size:1.6rem;
+    }
+    .support-txt{
+    width: 100%;
+    margin-top:8px;
+    padding: 5px;
+    background-color: #fff;
+    color: black;
+    }
+
+    .inner-row{
+        width:90%;
+    }
+    .intro{
+        font-size: 0.8rem;
+    }
+    .inner-row > a {
+        font-size: 0.85rem;
+        padding: 5px 20px 5px 20px;
+    }
+    .port-row{
+        width: 90%;
+    
+    }
+    .comp-name{
+        font-size: 0.85rem;
+    }
+    .p-link{
+        width:80%;
+        font-size: 0.8rem;
+    }
+    .foot > div{
+        width:90%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .foot-logo{
+        order: -1;
+        width: 20%;
+    }
+    .foot-el{
+        margin: 10px 0px;
+        width:auto;
+    }
+
+
+
+}
